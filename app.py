@@ -5,7 +5,7 @@ import cv2
 import numpy as np
 
 # Load your disease prediction model
-model = tf.keras.models.load_model('D:/disease-prediction/models/new-model.h5', compile=False)  # Update with your actual model file
+model = tf.keras.models.load_model('new-model.h5', compile=False)  # Update with your actual model file
 class_names=['Tomato_Lateblight', 'Potato_Lateblight', 'Pepperbell_healthy', 'Tomato_Bacterialspot', 'Tomato_SpiderMitesTwoSpottedSpiderMite', 'Tomato_TargetSpot','Tomato_healthy', 'Potato_Earlyblight','Tomato_TomatoYellowLeafCurlVirus','Tomato_Septorialeafspot','Tomato_TomatoMosaicVirus','Tomato_Earlyblight','Pepperbell_Bacterial_spot','Potato_healthy','Tomato_LeafMold']
 # Define a function to preprocess the image for prediction
 def preprocess_image(uploaded_image):
